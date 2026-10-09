@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-09",
+  "assertions": 1242,
+  "officialTableComparisons": 1112,
+  "maxTableAbsoluteDifference": 0.0004979422316030296,
+  "reference": "國土署103年版表2.18、2.19（表列精度0.001，容許四捨五入0.0005）",
+  "shortTerm": {
+    "V50": 37.5,
+    "V10": 29.325000000000003,
+    "qRatio10": 0.6115240000000001,
+    "qRatio25": 0.8244640000000001,
+    "baseShear10_tf": 23.265550582746048
+  },
+  "tested": [
+    "三地況獨立中點積分",
+    "高度分段不變性",
+    "X/Y互換",
+    "低樓橫風比及兩方向扭矩最大值",
+    "高樓動態共振表格",
+    "施工回歸期端點與內插",
+    "施工月數不折減",
+    "變位及半年載重不受施工折減",
+    "不適用條件",
+    "效應組合",
+    "加速度與免檢邊界"
+  ],
+  "browser": {
+    "desktop": true,
+    "mobile390": true,
+    "shortTermBoundary": true,
+    "driftCoverage": true,
+    "comfort": true,
+    "staleResultInvalidation": true,
+    "wordDocx": true,
+    "legacyShortTerm": true,
+    "pageErrors": []
+  },
+  "offline": {
+    "autosaveRoundtrip": true,
+    "realOfflineDownloadsBothModules": true,
+    "offlineInputsPreserved": true,
+    "offlineShortTermCalculation": true,
+    "offlineVideoSeek": true,
+    "video120seconds": true,
+    "closePauses": true,
+    "mobileNoOverflow": true,
+    "noDuplicateIds": true,
+    "pageErrors": []
+  },
+  "video": {
+    "durationSeconds": 120,
+    "format": "H.264 High, yuv420p, 1280x720, 24fps",
+    "hyperframesCheck": "passed; 0 errors; 35/35 contrast checks; reviewed crossfade overlap and nested scene warnings"
+  }
+}

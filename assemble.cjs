@@ -1,1 +1,4 @@
 const fs=require('fs'),path=require('path');let s=fs.readFileSync(path.join(__dirname,'template.html'),'utf8');for(const [key,p]of [['TRACE','trace.js'],['REPORT','report.js'],['DOCXVENDOR','vendor/docx/docx-9.6.1.iife.js'],['DOCX','shared/calculation-docx.js']])s=s.replace('@@'+key+'@@',()=>fs.readFileSync(path.join(__dirname,p),'utf8'));fs.writeFileSync(path.join(__dirname,'index.html'),s);console.log('assembled',s.length);
+
+
+let a=fs.readFileSync(path.join(__dirname,'full/app.html'),'utf8');for(const [key,p]of [['VENDOR','vendor/docx/docx-9.6.1.iife.js'],['DOCX','shared/calculation-docx.js'],['ENGINE','full/engine.js'],['APP','full/app.js']])a=a.replace('@@'+key+'@@',()=>fs.readFileSync(path.join(__dirname,p),'utf8'));fs.writeFileSync(path.join(__dirname,'advanced.html'),a);console.log('advanced assembled',a.length);

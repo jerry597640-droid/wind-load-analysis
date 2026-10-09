@@ -1,5 +1,6 @@
 function windTrace(kind,s,r){
  const t=terrains[s.terrain],steps=[],tables=[],fmt=x=>typeof x==='number'?Number(x.toPrecision(12)).toString():String(x),add=(title,formula,substitution,result,unit='',condition='',source='')=>steps.push({title,formula,substitution,result,unit,condition,source});
+ if(s.V50!==undefined)add('設計情境／短期風速換算','V(T)=V50×r(T)',`V50=${s.V50}；T=${s.shortT}；r=${s.shortFactor}`,s.V,'m/s',s.shortStage==='temporary'?`施工 ${s.shortMonths} 月；${s.shortBasis}`:'永久使用','§6.2：最低10年；10年0.782、25年0.908、50年1，分段線性內插');
  tables.push({title:'實際地況來源表與採用列',source:'既有引擎 terrains；規範 §2.3、§2.6、§2.7',headers:['地況','α','zg m','c','ℓ m','ε','zmin m','本次選擇'],rows:Object.entries(terrains).map(([k,v])=>[k,v.alpha,v.zg,v.c,v.ell,v.eps,v.zmin,k===s.terrain?'採用':'未採用'])});
  const qp=(z,label)=>{const ze=Math.max(5,z),k=K(z,t),v=q(z,s);add(label,'ze=max(5,z); K=2.774(ze/zg)^(2α); q=0.06 K Kzt (I V)²',`ze=max(5,${z})=${ze} m; K=2.774(${ze}/${t.zg})^(${2*t.alpha})=${fmt(k)}; q=0.06×${fmt(k)}×${s.kzt}×(${s.I}×${s.V})²`,v,'kgf/m²','所有高度採同一輸入 Kzt；5 m 以下固定；I 在平方內','規範 §2.6；地況表採 '+s.terrain+' 列');};
  if(kind==='building'||kind==='component')qp(s.h,'屋頂風速壓 q(h)');qp(5,'積分基準風速壓 q(5)');
