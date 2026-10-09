@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-09",
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "gender": "Female",
+  "rate": "-5%",
+  "durationSeconds": 120,
+  "chapterLeadInSeconds": 0.55,
+  "media": {
+    "audioSamples": 5760000,
+    "sampleRate": 48000,
+    "peakAmplitude": 0.7707036137580872,
+    "clippedSamples": 0,
+    "chapterRms": [
+      0.10480359941720963,
+      0.10022012889385223,
+      0.10679005831480026,
+      0.10183814913034439,
+      0.11254967004060745,
+      0.10960514843463898,
+      0.11160869151353836,
+      0.11050409078598022
+    ],
+    "unchangedVideoBitstream": true,
+    "videoBitstreamSHA256": "752a55264dd7d83f7a6dba32037a0025eac016237dc9019f596b43ad98779d91"
+  },
+  "browser": {
+    "voice": "zh-TW-HsiaoChenNeural",
+    "pages": [
+      {
+        "file": "index.html",
+        "metadata": {
+          "duration": 120,
+          "muted": false,
+          "volume": 1,
+          "label": true
+        },
+        "chapterAudioDecodedBytes": [
+          137,
+          17592,
+          18537,
+          31669,
+          34664,
+          49469,
+          51883,
+          66736
+        ],
+        "offline": {
+          "embedded": true,
+          "duration": 120,
+          "muted": false
+        },
+        "offlineAudioDecodedBytes": 14830,
+        "mobile": {
+          "viewport": 390,
+          "videoWidth": 368,
+          "dialogOverflow": false
+        }
+      },
+      {
+        "file": "advanced.html",
+        "metadata": {
+          "duration": 120,
+          "muted": false,
+          "volume": 1,
+          "label": true
+        },
+        "chapterAudioDecodedBytes": [
+          137,
+          17588,
+          18533,
+          31144,
+          33818,
+          48631,
+          51037,
+          65214
+        ],
+        "offline": {
+          "embedded": true,
+          "duration": 120,
+          "muted": false
+        },
+        "offlineAudioDecodedBytes": 14822,
+        "mobile": {
+          "viewport": 390,
+          "videoWidth": 324,
+          "dialogOverflow": false
+        }
+      }
+    ],
+    "errors": []
+  },
+  "sourceCheck": "HyperFrames 0.8.142 check passed: zero errors, 35/35 contrast. Existing nested scene and 0.45-second crossfade warnings reviewed.",
+  "speechCheck": "TTS sentence metadata matches source; automatic speech recognition confirms chapter alignment and key numbers (0.01, 1%, 10 years, 50 years). ASR is not a manual listening review."
+}

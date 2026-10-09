@@ -1,7 +1,7 @@
 臺灣建築物風力分析｜離線使用
 1. 完整解壓縮，保留 assets 資料夾。
 2. 用桌面瀏覽器開啟 index.html（基本模組）或 advanced.html（整體與施工期）。
-3. 影片以 assets/wind-full-tutorial.mp4 播放，可斷網使用。
+3. 影片以 assets/wind-full-tutorial.mp4 播放，內含台灣女性國語合成旁白，可斷網使用。獨立語音為 assets/wind-tutorial-zh-TW.mp3。
 4. 手機亦可使用線上版「下載離線版」，產生含影片的單一 HTML；需以可執行 HTML/JavaScript 的瀏覽器開啟，檔案預覽器可能不執行計算。
 5. 使用「儲存專案」下載 JSON 備份；本機暫存不等於備份。
 6. 本案設計、50 年變位、半年舒適性分別使用對應載重。施工期間不得以半年風速設計。

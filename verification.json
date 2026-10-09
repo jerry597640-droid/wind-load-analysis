@@ -50,6 +50,11 @@
   "video": {
     "durationSeconds": 120,
     "format": "H.264 High, yuv420p, 1280x720, 24fps",
-    "hyperframesCheck": "passed; 0 errors; 35/35 contrast checks; reviewed crossfade overlap and nested scene warnings"
+    "hyperframesCheck": "passed; 0 errors; 35/35 contrast checks; reviewed crossfade overlap and nested scene warnings",
+    "audio": "AAC mono, 48 kHz, 96 kbps, 120 seconds",
+    "voice": "zh-TW-HsiaoChenNeural",
+    "locale": "zh-TW",
+    "gender": "Female",
+    "voiceVerification": "docs/verification-voice-2026-10-09.json"
   }
 }
